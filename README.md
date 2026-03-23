@@ -83,7 +83,7 @@ node 완주하지_못한_선수.js
 
 5. **Pull Request**: 본인의 브랜치에서 `main` 브랜치로 PR을 생성합니다.
 
-6. **Code Review & Merge**: 각 조의 PR이 등록되면 다 함께 코드 리뷰를 진행하고, 아래의 승인 요건이 충족되면 `main`에 merge 합니다.
+6. **Code Review & Merge**: 각 스터디원들의 PR이 등록되면 다 함께 코드 리뷰를 진행하고, 아래의 승인 요건이 충족되면 `main`에 merge 합니다.
 
 ✅ **PR 및 코드 리뷰 규칙**
 
