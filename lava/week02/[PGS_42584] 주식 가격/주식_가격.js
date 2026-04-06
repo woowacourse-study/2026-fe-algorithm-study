@@ -19,3 +19,19 @@
 
 // N번씩 순회하면서 새로운 배열에 +1씩 해주는 방식으로 하면 N^2으로는 가능할 것 같은데 배열 크기가 10만이라 안 될 것 같음
 // 방법 모르겠으니까 책 한 번 볼게요 오래 고민했음
+function solution(prices) {
+    const compareStack = [];
+    const answerArray = new Array(prices.length).fill(0);
+    for (let i = 0; i < prices.length; i++) {
+        while (compareStack.length && prices[compareStack[compareStack.length - 1]] > prices[i]) {
+            const top = compareStack.pop();
+            answerArray[top] = i - top;
+        }
+        compareStack.push(i);
+    }
+    while (compareStack.length) {
+        const top = compareStack.pop();
+        answerArray[top] = prices.length - 1 - top;
+    }
+    return answerArray;
+}
