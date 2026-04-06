@@ -24,6 +24,7 @@ function solution(prices) {
     const answerArray = new Array(prices.length).fill(0);
     for (let i = 0; i < prices.length; i++) {
         while (compareStack.length && prices[compareStack[compareStack.length - 1]] > prices[i]) {
+            // prices[i]는 고정이고, compareStack의 top 부분만 pop하면서 비교하는 방식인거지, 그니까 top이 prices[i]보다 큰 동안 계속 순회
             const top = compareStack.pop();
             answerArray[top] = i - top;
         }
