@@ -6,6 +6,7 @@ function solution(n, k) {
       queue.push(queue[0]);
       queue.shift();
     }
+
     queue.shift();
   }
 

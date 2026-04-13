@@ -14,6 +14,7 @@ function solution(progresses, speeds) {
         cnt++;
       }
       // 3. 개수를 answer에 푸쉬
+
       answer.push(cnt);
     }
     // 4. progresses.length === 0 이면 while이 자동으로 탈출
